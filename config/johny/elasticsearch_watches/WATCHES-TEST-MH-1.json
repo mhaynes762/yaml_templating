@@ -56,7 +56,7 @@
     "GitHubRepository": "mhaynes762/yaml_templating",
     "JiraAlias": "BASE",
     "JiraComponent": "BASE",
-    "version": "BASE"
+    "version": "BASE",
     "deploy_to": [
       "start.main",
     ]

@@ -1,0 +1,68 @@
+{
+  "trigger": {
+    "schedule": {
+      "cron": [
+        "10 0/5 * * * ?"
+      ]
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "search_type": "query_then_fetch",
+        "indices": [
+          "{{: __datacenter__.mh_test_index :}}"
+        ],
+        "types": [],
+        "body": {
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "range": {
+                    "@timestamp": {
+                      "to": "now",
+                      "from": "now-61m"
+                    }
+                  }
+                },
+                {
+                  "query_string": {
+                    "query": "{{: __datacenter__.mh_test_query :}}"
+                  }
+                }
+              ]
+            }
+          },
+          "size": 0
+        }
+      },
+      "timeout_in_millis": 45000
+    }
+  }, 
+  "condition": {
+    "compare": {
+      "ctx.payload.hits.total": {
+        "lt": "{{: __datacenter__.mh_test_count :}}"
+      }
+    }
+  },
+  "metadata": {
+    "alert_thresh": "{{: __datacenter__.mh_test_count :}}",
+    "uc_datacenter": "{{: __datacenter__.uc_datacenter :}}",
+    "state": {
+      "start.main": "{{: mh_test_state :}}"
+    },
+    "GitHubRepository": "mhaynes762/yaml_templating",
+    "JiraAlias": "BASE",
+    "JiraComponent": "BASE",
+    "version": "BASE",
+    "deploy_to": [
+      "start.main",
+    ]
+  },
+  "actions": {
+    "notify-slack": "{{: __datacenter__.mh_notify_slack :}}"
+  },
+  "throttle_period_in_millis": 3600000
+}

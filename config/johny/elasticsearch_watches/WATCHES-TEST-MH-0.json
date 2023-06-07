@@ -28,7 +28,7 @@
                 },
                 {
                   "query_string": {
-                    "query": "{{: __datacenter__.mh_test_query :}}"
+                    "query": "{{: __datacenter__.some_query :}}"
                   }
                 }
               ]

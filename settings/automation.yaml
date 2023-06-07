@@ -1,0 +1,6 @@
+---
+datacenters:
+  start:
+    url: someurl-name-0.com
+  name1:
+    url: same-vpn-name-1.com

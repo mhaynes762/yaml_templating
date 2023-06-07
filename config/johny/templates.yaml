@@ -1,0 +1,5 @@
+---
+
+start:
+  proxy_url: someproxy.com
+  proxy_port: 3128

@@ -9,11 +9,11 @@ name: Lint Code Base
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
-env:
+#env:
   #PYTHON_FLAKE8_CONFIG_FILE: .flake8
   #YAML_CONFIG_FILE: .yaml-lint.yml
   ##ACTIONS_RUNNER_DEBUG: true

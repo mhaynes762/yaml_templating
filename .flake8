@@ -1,2 +1,7 @@
-max-line-length = 120
-extend-ignore = C0413
+extends: default
+
+rules:
+  line-length:
+    max: 120
+    level: warning
+  extend-ignore = C0413

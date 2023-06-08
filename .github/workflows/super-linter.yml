@@ -1,3 +1,4 @@
+---
 # This workflow executes several linters on changed files based on languages used in your code base whenever
 # you push a code or open a pull request.
 #
@@ -8,12 +9,15 @@ name: Lint Code Base
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 env:
   PYTHON_FLAKE8_CONFIG_FILE: .flake8
+  YAML_CONFIG_FILE: .yaml-lint.yml
+  VALIDATE_PYTHON: true
+  VALIDATE_YAML: true
 
 jobs:
   run-lint:

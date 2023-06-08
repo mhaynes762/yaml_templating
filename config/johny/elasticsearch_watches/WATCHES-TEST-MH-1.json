@@ -58,7 +58,7 @@
     "JiraComponent": "BASE",
     "version": "BASE",
     "deploy_to": [
-      "start.main",
+      "start.main"
     ]
   },
   "actions": {

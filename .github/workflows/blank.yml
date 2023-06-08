@@ -22,12 +22,6 @@ jobs:
     name: Start Validation
     runs-on: ubuntu-latest
     steps:
-    - name: Check-out devops repository
-      uses: actions/checkout@v3
-      with:
-        repository: mhaynes762/yaml_templating
-        token: ${{ secrets.GITHUB_TOKEN }}
-        path: /
 
     - name: Validate
       run: python automation/start.py

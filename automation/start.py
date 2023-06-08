@@ -11,3 +11,6 @@ def cheese(somevar, someother):
         print(f"Key : {k}")
 
 print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+ if __name__== "__main__":
+  print("Couldn't open the other repo !")

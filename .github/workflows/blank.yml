@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 env:
-  DEVOPS_DIR: devops
+  DEVOPS_DIR: automation
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -37,17 +37,17 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  hello-world:
+  start-validation:
     name: Start Validation
     runs-on: ubuntu-latest
     steps:
     - name: Check-out devops repository
       uses: actions/checkout@v3
       with:
-        repository: mhaynes762/validation_scripts
+        repository: mhaynes762/yaml_templating
         token: ${{ secrets.GITHUB_TOKEN }}
         path: ${{ env.DEVOPS_DIR }}
 
-    - name: Hello World
-      run: python ${{ env.DEVOPS_DIR }}/start_validation.py
+    - name: Validate
+      run: python ${{ env.DEVOPS_DIR }}/start.py
       shell: sh

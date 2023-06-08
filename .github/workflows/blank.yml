@@ -38,11 +38,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   hello-world:
-    name: Hello world
+    name: Start Validation
     runs-on: ubuntu-latest
     steps:
     - name: Check-out devops repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: mhaynes762/validation_scripts
         token: ${{ secrets.GITHUB_TOKEN }}

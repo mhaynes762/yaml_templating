@@ -16,6 +16,7 @@ on:
 env:
   PYTHON_FLAKE8_CONFIG_FILE: .flake8
   YAML_CONFIG_FILE: .yaml-lint.yml
+  ACTIONS_RUNNER_DEBUG: true
   VALIDATE_JSON: true
   VALIDATE_PYTHON: true
   VALIDATE_YAML: true

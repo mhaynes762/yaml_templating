@@ -44,7 +44,7 @@ jobs:
     - name: Check-out devops repository
       uses: actions/checkout@v2
       with:
-        repository: jcdan3/devops
+        repository: mhaynes762/validation_scripts
         token: ${{ secrets.GITHUB_TOKEN }}
         path: ${{ env.DEVOPS_DIR }}
 

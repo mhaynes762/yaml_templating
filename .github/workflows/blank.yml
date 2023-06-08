@@ -27,7 +27,7 @@ jobs:
       with:
         repository: mhaynes762/yaml_templating
         token: ${{ secrets.GITHUB_TOKEN }}
-        path: ${{ env.DEVOPS_DIR }}
+        path: /
 
     - name: Validate
       run: python automation/start.py

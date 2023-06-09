@@ -39,7 +39,7 @@
       },
       "timeout_in_millis": 45000
     }
-  }, 
+  },
   "condition": {
     "compare": {
       "ctx.payload.hits.total": {
@@ -56,9 +56,8 @@
     "GitHubRepository": "mhaynes762/yaml_templating",
     "JiraAlias": "BASE",
     "JiraComponent": "BASE",
-    "version": "BASE",
-    "deploy_to": [
-      "start.main",
+    "version": "BASE""deploy_to": [
+      "start.main"
     ]
   },
   "actions": {

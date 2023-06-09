@@ -1,6 +1,11 @@
 #!/usr/bin/env/python3
 
+import os
 import json
 
+
+CWD = os.getcwd()
+
+
 def task1(someval):
-  print("just an import test")
+    print(f"CWD = {CWD}")

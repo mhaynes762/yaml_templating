@@ -13,4 +13,4 @@ def cheese(somevar, someother):
 print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 if __name__== "__main__":
-    print("Couldn't open the other repo !")
+    print("Couldn't open the other repo HELP!")
